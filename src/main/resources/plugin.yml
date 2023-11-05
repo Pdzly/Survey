@@ -1,0 +1,18 @@
+name: RookisSurvey
+version: '${project.version}'
+main: world.lemmy.rookissurvey.RookisSurvey
+api-version: '1.20'
+prefix: LW Survey
+authors: [Rooki]
+description: A simple hardcoded survey system
+website: https://lemmy.world
+commands:
+    survey:
+        description: Start a Survey to fill out
+        usage: /survey [survey-name]
+        default: true
+    showanswers:
+        description: Show all answers from users
+        usage: /showanswers
+        permission: rookissurvey.showsurveys
+        default: op
